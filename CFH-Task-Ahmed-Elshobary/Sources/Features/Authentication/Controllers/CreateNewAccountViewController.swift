@@ -101,5 +101,12 @@ extension CreateNewAccountViewController {
         if let selectedYear = calendar.date(from: components) {
             datePicker.setDate(selectedYear, animated: true)
         }
+        if let ageView =   inputsFields.first(where: { $0.tag == 4 }) {
+            let currentYear = calendar.component(.year, from: Date())
+            let selectedYear = calendar.component(.year, from: datePicker.date)
+            let age = currentYear - selectedYear
+            ageView.inputTextField.text = "\(age)"
+            ageView.inputTextField.isHidden = true
+        }
     }
 }
