@@ -31,11 +31,11 @@ extension HomeViewController: CLLocationManagerDelegate {
             switch status {
             case .authorizedWhenInUse, .authorizedAlways:
                 // User has granted permission, start updating location
+                self.enableLocationLabel.isHidden = true
+                self.venuesTableView.isHidden = (self.currendView == .listView) ? false : true
+                self.mapView.isHidden = (self.currendView == .listView) ? true : false
                 locationManager.startUpdatingLocation()
             case .denied, .restricted:
-                // User has denied or restricted permission, show custom alert if not already presented
-                if UserDefaultsManager.shared.isPermissionAlertPresented() {
-                    UserDefaultsManager.shared.setPermissionAlertPresented(true)
                     self.present(HelperMethods.showAlert(title: "Location Access Denied", message: "Please enable location access in Settings to use this feature.",primaryButtonAction: { action in
                         if let settingsURL = URL(string: UIApplication.openSettingsURLString) {
                             UIApplication.shared.open(settingsURL)
@@ -43,11 +43,17 @@ extension HomeViewController: CLLocationManagerDelegate {
                     } ,secondButtonAction: { action in
                         if (UserDefaultsManager.shared.getLongitude() == nil || UserDefaultsManager.shared.getLongitude() == 0.0) || (UserDefaultsManager.shared.getLatitude() == nil || UserDefaultsManager.shared.getLatitude() == 0.0) {
                             self.enableLocationLabel.isHidden = false
+                            self.venuesTableView.isHidden = true
+                            self.mapView.isHidden = true
                         } else {
+                            self.enableLocationLabel.isHidden = true
+                            self.venuesTableView.isHidden = (self.currendView == .listView) ? false : true
+                            self.mapView.isHidden = (self.currendView == .listView) ? true : false
                             self.searchNearbyVenues()
+                            
                         }
                     },primaryButtonTitle: "Settings", secondButtonTitle: "Cancel"), animated: true)
-                }
+              //  }
             default:
                 locationManager.requestLocation()
                 break
@@ -68,7 +74,12 @@ extension HomeViewController: CLLocationManagerDelegate {
                 }, secondButtonAction: { action in
                     if (UserDefaultsManager.shared.getLongitude() == nil || UserDefaultsManager.shared.getLongitude() == 0.0) || (UserDefaultsManager.shared.getLatitude() == nil || UserDefaultsManager.shared.getLatitude() == 0.0) {
                         self.enableLocationLabel.isHidden = false
+                        self.venuesTableView.isHidden = true
+                        self.mapView.isHidden = true
                     } else {
+                        self.enableLocationLabel.isHidden = true
+                        self.venuesTableView.isHidden = (self.currendView == .listView) ? false : true
+                        self.mapView.isHidden = (self.currendView == .listView) ? true : false
                         self.searchNearbyVenues()
                     }
                 } ,primaryButtonTitle: "Settings", secondButtonTitle: "Cancel"), animated: true)

@@ -97,7 +97,7 @@ extension CreateNewAccountViewController {
     @objc func dateChanged(_ datePicker: UIDatePicker) {
         // Prevent selecting a date other than the year
         let calendar = Calendar.current
-        let components = calendar.dateComponents([.year], from: datePicker.date)
+        let components = calendar.dateComponents([.year, .month, .day], from: datePicker.date)
         if let selectedYear = calendar.date(from: components) {
             datePicker.setDate(selectedYear, animated: true)
         }

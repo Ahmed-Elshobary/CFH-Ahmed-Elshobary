@@ -10,6 +10,10 @@ import SideMenu
 import CoreLocation
 import MapKit
 
+enum SelectedView{
+    case listView
+    case mapView
+}
 class HomeViewController: UIViewController {
     
     // MARK: - Variables
@@ -19,6 +23,7 @@ class HomeViewController: UIViewController {
     var userLongitude: Double?
     var venuesData: VenueModelResponse?
     var viewModel: HomeViewModel = .init()
+    var currendView: SelectedView = .listView
     
     // MARK: - Outlets
     
@@ -36,6 +41,7 @@ class HomeViewController: UIViewController {
         listViewButtonOutlet.setTitleColor(UIColor.white, for: .normal)
         mapView.isHidden = true
         venuesTableView.isHidden = false
+        currendView = .listView
     }
     
     @IBAction func mapViewAction(_ sender: Any) {
@@ -44,6 +50,7 @@ class HomeViewController: UIViewController {
         mapViewButtonOutlet.setTitleColor(UIColor.white, for: .normal)
         venuesTableView.isHidden = true
         mapView.isHidden = false
+        currendView = .mapView
         
     }
     
@@ -56,6 +63,7 @@ class HomeViewController: UIViewController {
         listViewButtonOutlet.setTitleColor(UIColor.white, for: .normal)
         mapView.isHidden = true
         venuesTableView.isHidden = false
+        currendView = .listView
         setupLocationManager()
         bindNearbyVenues()
         
