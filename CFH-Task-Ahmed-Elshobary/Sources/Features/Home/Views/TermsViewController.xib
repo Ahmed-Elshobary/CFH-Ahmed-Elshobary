@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TermsViewController" customModule="CFH_Task_Ahmed_Elshobary" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="rHB-jj-0uc" id="ZLE-GB-aFd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="rHB-jj-0uc">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OgJ-Dh-1Xz">
+                    <rect key="frame" x="20" y="69" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="c9X-2M-mAE"/>
+                        <constraint firstAttribute="width" constant="40" id="iQq-fI-ES7"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="hamburger"/>
+                    <connections>
+                        <action selector="sideMenuButton:" destination="-1" eventType="touchUpInside" id="fDG-PS-O4q"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cairofinancialholding" translatesAutoresizingMaskIntoConstraints="NO" id="Mzt-i6-oDd">
+                    <rect key="frame" x="103.66666666666669" y="109" width="186" height="216"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="186" id="4Le-ig-W1V"/>
+                        <constraint firstAttribute="height" constant="216" id="VMl-f1-qeY"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UG6-mO-T2u">
+                    <rect key="frame" x="20" y="345" width="353" height="284.33333333333326"/>
+                    <mutableString key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</mutableString>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="ze0-Uu-b2S"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="UG6-mO-T2u" firstAttribute="leading" secondItem="ze0-Uu-b2S" secondAttribute="leading" constant="20" id="3qC-fo-1l2"/>
+                <constraint firstItem="ze0-Uu-b2S" firstAttribute="trailing" secondItem="UG6-mO-T2u" secondAttribute="trailing" constant="20" id="6tX-OH-3hA"/>
+                <constraint firstItem="UG6-mO-T2u" firstAttribute="top" secondItem="Mzt-i6-oDd" secondAttribute="bottom" constant="20" id="FAA-NB-BCs"/>
+                <constraint firstItem="Mzt-i6-oDd" firstAttribute="top" secondItem="ze0-Uu-b2S" secondAttribute="top" constant="50" id="Nvt-9c-iy9"/>
+                <constraint firstItem="ze0-Uu-b2S" firstAttribute="bottom" secondItem="UG6-mO-T2u" secondAttribute="bottom" priority="250" constant="20" id="VWp-66-vCK"/>
+                <constraint firstItem="OgJ-Dh-1Xz" firstAttribute="leading" secondItem="ze0-Uu-b2S" secondAttribute="leading" constant="20" id="Won-Zu-laz"/>
+                <constraint firstItem="OgJ-Dh-1Xz" firstAttribute="top" secondItem="ze0-Uu-b2S" secondAttribute="top" constant="10" id="oZc-f4-OVe"/>
+                <constraint firstItem="Mzt-i6-oDd" firstAttribute="centerX" secondItem="rHB-jj-0uc" secondAttribute="centerX" id="raG-JQ-BWB"/>
+            </constraints>
+            <point key="canvasLocation" x="-53" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Cairofinancialholding" width="1360" height="376"/>
+        <image name="hamburger" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

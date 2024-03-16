@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateNewAccountViewController" customModule="CFH_Task_Ahmed_Elshobary" customModuleProvider="target">
+            <connections>
+                <outlet property="ageButtonOutlet" destination="ZDi-ah-9mw" id="j42-jv-TON"/>
+                <outlet property="view" destination="oPA-4E-pdL" id="kCR-Ef-d2p"/>
+                <outletCollection property="inputsFields" destination="XAF-Uz-cCQ" collectionClass="NSMutableArray" id="LiE-CN-B4a"/>
+                <outletCollection property="inputsFields" destination="f7M-Oa-alb" collectionClass="NSMutableArray" id="98H-3U-Q3M"/>
+                <outletCollection property="inputsFields" destination="yA5-mf-R6r" collectionClass="NSMutableArray" id="2Th-CX-OnF"/>
+                <outletCollection property="inputsFields" destination="lH5-It-fxx" collectionClass="NSMutableArray" id="uKJ-hg-NfQ"/>
+                <outletCollection property="inputsFields" destination="Afv-lG-zjj" collectionClass="NSMutableArray" id="it2-q5-Wc7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="oPA-4E-pdL">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tb8-Lj-Mmz">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sdA-wy-pYR">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="900"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cairofinancialholding" translatesAutoresizingMaskIntoConstraints="NO" id="Gfo-sU-KpF">
+                                    <rect key="frame" x="103.66666666666669" y="30" width="186" height="216"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="186" id="7z8-KH-EY7"/>
+                                        <constraint firstAttribute="height" constant="216" id="bLD-a5-xk8"/>
+                                    </constraints>
+                                </imageView>
+                                <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XAF-Uz-cCQ" customClass="InputTextField" customModule="CFH_Task_Ahmed_Elshobary" customModuleProvider="target">
+                                    <rect key="frame" x="50" y="246" width="293" height="90"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="90" id="nLx-sI-Iw9"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="mainIcon" value="userIcon"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="First Name"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="error" value="Please enter First name "/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value="First Name"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isPassword" value="NO"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f7M-Oa-alb" customClass="InputTextField" customModule="CFH_Task_Ahmed_Elshobary" customModuleProvider="target">
+                                    <rect key="frame" x="50" y="338" width="293" height="90"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="90" id="LwS-W1-x31"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="mainIcon" value="userIcon"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Last Name"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="error" value="Please enter Last name "/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value="Last Name"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isPassword" value="NO"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yA5-mf-R6r" customClass="InputTextField" customModule="CFH_Task_Ahmed_Elshobary" customModuleProvider="target">
+                                    <rect key="frame" x="50" y="430" width="293" height="90"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="90" id="Wfr-DI-T3b"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="mainIcon" value="call"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Age (Must be on or above 18)"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value="Age (Must be on or above 18)"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isPassword" value="NO"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="error" value="Please enter Valid Age "/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDi-ah-9mw">
+                                    <rect key="frame" x="50" y="430" width="293" height="90"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <connections>
+                                        <action selector="selectAge:" destination="-1" eventType="touchUpInside" id="bXI-lr-yWh"/>
+                                    </connections>
+                                </button>
+                                <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lH5-It-fxx" customClass="InputTextField" customModule="CFH_Task_Ahmed_Elshobary" customModuleProvider="target">
+                                    <rect key="frame" x="50" y="522" width="293" height="90"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="90" id="pka-1t-6ER"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="mainIcon" value="lock"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Email"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="error" value="Please enter Valid Email "/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value="Email"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isPassword" value="NO"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Afv-lG-zjj" customClass="InputTextField" customModule="CFH_Task_Ahmed_Elshobary" customModuleProvider="target">
+                                    <rect key="frame" x="50" y="614" width="293" height="90"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="90" id="gVc-JS-dnS"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="mainIcon" value="lock"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Password"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="error" value="please enter vaild password"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value="Password"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isPassword" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uYk-Wq-BpD">
+                                    <rect key="frame" x="60" y="744" width="273" height="45"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgR-87-BCY">
+                                            <rect key="frame" x="0.0" y="0.0" width="273" height="45"/>
+                                            <color key="backgroundColor" red="0.0" green="0.16470588235294117" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Create Account">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="regularFont">
+                                                    <real key="value" value="17"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="12"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="createAccount:" destination="-1" eventType="touchUpInside" id="7LY-4h-TGS"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.0" green="0.1647058824" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="vuf-F9-4xI"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="IR5-E5-AKs">
+                                    <rect key="frame" x="89" y="799" width="215" height="30"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you Have Account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fO-CT-x4k">
+                                            <rect key="frame" x="0.0" y="0.0" width="172" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.50980392156862742" green="0.0" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="regularFont">
+                                                    <real key="value" value="11"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dn-n1-sRN">
+                                            <rect key="frame" x="177" y="0.0" width="38" height="30"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Login">
+                                                <color key="titleColor" red="0.0" green="0.16470588235294117" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="regularFont">
+                                                    <real key="value" value="11"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="login:" destination="-1" eventType="touchUpInside" id="DlD-3M-np2"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="ctn-Br-YSB"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="Afv-lG-zjj" firstAttribute="leading" secondItem="sdA-wy-pYR" secondAttribute="leading" constant="50" id="6KB-6o-zeu"/>
+                                <constraint firstItem="lH5-It-fxx" firstAttribute="leading" secondItem="sdA-wy-pYR" secondAttribute="leading" constant="50" id="BsJ-4y-YBg"/>
+                                <constraint firstAttribute="trailing" secondItem="XAF-Uz-cCQ" secondAttribute="trailing" constant="50" id="Ilv-wr-0Ab"/>
+                                <constraint firstItem="IR5-E5-AKs" firstAttribute="top" secondItem="uYk-Wq-BpD" secondAttribute="bottom" constant="10" id="KCL-Td-gAE"/>
+                                <constraint firstItem="f7M-Oa-alb" firstAttribute="top" secondItem="XAF-Uz-cCQ" secondAttribute="bottom" constant="2" id="M90-nU-m6A"/>
+                                <constraint firstItem="ZDi-ah-9mw" firstAttribute="width" secondItem="yA5-mf-R6r" secondAttribute="width" id="Ng9-WO-QAa"/>
+                                <constraint firstItem="XAF-Uz-cCQ" firstAttribute="leading" secondItem="sdA-wy-pYR" secondAttribute="leading" constant="50" id="OjY-XX-ts2"/>
+                                <constraint firstItem="ZDi-ah-9mw" firstAttribute="height" secondItem="yA5-mf-R6r" secondAttribute="height" id="QBh-7q-B9I"/>
+                                <constraint firstAttribute="trailing" secondItem="yA5-mf-R6r" secondAttribute="trailing" constant="50" id="QR9-Ke-RAR"/>
+                                <constraint firstItem="f7M-Oa-alb" firstAttribute="leading" secondItem="sdA-wy-pYR" secondAttribute="leading" constant="50" id="RRv-Gv-3CH"/>
+                                <constraint firstAttribute="trailing" secondItem="uYk-Wq-BpD" secondAttribute="trailing" constant="60" id="VQX-qK-fV6"/>
+                                <constraint firstItem="ZDi-ah-9mw" firstAttribute="centerX" secondItem="yA5-mf-R6r" secondAttribute="centerX" id="VpS-ev-gmj"/>
+                                <constraint firstItem="XAF-Uz-cCQ" firstAttribute="top" secondItem="Gfo-sU-KpF" secondAttribute="bottom" id="W9P-Mb-PfY"/>
+                                <constraint firstAttribute="height" constant="900" id="WGl-lp-r1J"/>
+                                <constraint firstAttribute="trailing" secondItem="f7M-Oa-alb" secondAttribute="trailing" constant="50" id="XcH-gu-xg2"/>
+                                <constraint firstItem="uYk-Wq-BpD" firstAttribute="leading" secondItem="sdA-wy-pYR" secondAttribute="leading" constant="60" id="Yon-Pq-ATS"/>
+                                <constraint firstItem="Afv-lG-zjj" firstAttribute="top" secondItem="lH5-It-fxx" secondAttribute="bottom" constant="2" id="a5d-Zc-Jzg"/>
+                                <constraint firstItem="uYk-Wq-BpD" firstAttribute="top" secondItem="Afv-lG-zjj" secondAttribute="bottom" constant="40" id="hK6-LK-6Lc"/>
+                                <constraint firstAttribute="trailing" secondItem="Afv-lG-zjj" secondAttribute="trailing" constant="50" id="haE-iC-BNt"/>
+                                <constraint firstAttribute="trailing" secondItem="lH5-It-fxx" secondAttribute="trailing" constant="50" id="ksM-nz-qSd"/>
+                                <constraint firstItem="yA5-mf-R6r" firstAttribute="leading" secondItem="sdA-wy-pYR" secondAttribute="leading" constant="50" id="lAW-6g-dC5"/>
+                                <constraint firstItem="Gfo-sU-KpF" firstAttribute="centerX" secondItem="sdA-wy-pYR" secondAttribute="centerX" id="laG-E1-wBP"/>
+                                <constraint firstItem="yA5-mf-R6r" firstAttribute="top" secondItem="f7M-Oa-alb" secondAttribute="bottom" constant="2" id="qLP-Zh-Vze"/>
+                                <constraint firstItem="ZDi-ah-9mw" firstAttribute="centerY" secondItem="yA5-mf-R6r" secondAttribute="centerY" id="rcD-bA-0Wl"/>
+                                <constraint firstItem="IR5-E5-AKs" firstAttribute="centerX" secondItem="sdA-wy-pYR" secondAttribute="centerX" id="uhk-3c-Rtf"/>
+                                <constraint firstItem="lH5-It-fxx" firstAttribute="top" secondItem="yA5-mf-R6r" secondAttribute="bottom" constant="2" id="vri-2t-D2l"/>
+                                <constraint firstItem="Gfo-sU-KpF" firstAttribute="top" secondItem="sdA-wy-pYR" secondAttribute="top" constant="30" id="ybf-uG-eMk"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="sdA-wy-pYR" firstAttribute="leading" secondItem="Tb8-Lj-Mmz" secondAttribute="leading" id="0bY-cP-Xa7"/>
+                        <constraint firstAttribute="bottom" secondItem="sdA-wy-pYR" secondAttribute="bottom" id="MnU-Oo-qV2"/>
+                        <constraint firstItem="sdA-wy-pYR" firstAttribute="width" secondItem="Tb8-Lj-Mmz" secondAttribute="width" id="Ytc-bO-jxu"/>
+                        <constraint firstItem="sdA-wy-pYR" firstAttribute="top" secondItem="Tb8-Lj-Mmz" secondAttribute="top" id="oB5-au-GfL"/>
+                        <constraint firstAttribute="trailing" secondItem="sdA-wy-pYR" secondAttribute="trailing" id="zGV-xo-EeW"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="4GS-d1-T6e"/>
+            <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Tb8-Lj-Mmz" secondAttribute="bottom" id="Tl8-Jl-Q9M"/>
+                <constraint firstItem="Tb8-Lj-Mmz" firstAttribute="top" secondItem="oPA-4E-pdL" secondAttribute="top" id="bhz-eI-uuh"/>
+                <constraint firstItem="4GS-d1-T6e" firstAttribute="trailing" secondItem="Tb8-Lj-Mmz" secondAttribute="trailing" id="iNf-Eg-Hh9"/>
+                <constraint firstItem="Tb8-Lj-Mmz" firstAttribute="leading" secondItem="4GS-d1-T6e" secondAttribute="leading" id="tpy-US-qpG"/>
+            </constraints>
+            <point key="canvasLocation" x="258.77862595419845" y="-195.07042253521126"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Cairofinancialholding" width="1360" height="376"/>
+    </resources>
+</document>

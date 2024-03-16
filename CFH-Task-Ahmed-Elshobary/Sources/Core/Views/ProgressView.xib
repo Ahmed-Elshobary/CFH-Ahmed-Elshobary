@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProgressView" customModule="Ninety_90" customModuleProvider="target">
+            <connections>
+                <outlet property="prograssV" destination="mAz-rf-P5p" id="35y-1Q-Qtp"/>
+                <outlet property="widthConstraint" destination="k4H-1G-PXg" id="KTb-pe-m9v"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="bUi-U0-MUl">
+            <rect key="frame" x="0.0" y="0.0" width="500" height="3"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3wA-gg-Jwa">
+                    <rect key="frame" x="0.0" y="0.0" width="500" height="3"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mAz-rf-P5p">
+                            <rect key="frame" x="0.0" y="0.0" width="200" height="3"/>
+                            <color key="backgroundColor" red="0.043137254901960784" green="0.67450980392156867" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="200" id="k4H-1G-PXg"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="mAz-rf-P5p" firstAttribute="leading" secondItem="3wA-gg-Jwa" secondAttribute="leading" id="JBc-dd-HJ9"/>
+                        <constraint firstAttribute="bottom" secondItem="mAz-rf-P5p" secondAttribute="bottom" id="anH-7M-nKT"/>
+                        <constraint firstItem="mAz-rf-P5p" firstAttribute="top" secondItem="3wA-gg-Jwa" secondAttribute="top" id="f0X-yf-p2h"/>
+                        <constraint firstAttribute="height" constant="3" id="olb-LM-FE6"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="kox-Dx-rBx"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="3wA-gg-Jwa" secondAttribute="trailing" id="1vd-qh-F4c"/>
+                <constraint firstItem="3wA-gg-Jwa" firstAttribute="leading" secondItem="bUi-U0-MUl" secondAttribute="leading" id="I3m-Ir-7mP"/>
+                <constraint firstAttribute="bottom" secondItem="3wA-gg-Jwa" secondAttribute="bottom" id="YPz-hK-jBs"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-257" y="-445"/>
+        </view>
+    </objects>
+</document>

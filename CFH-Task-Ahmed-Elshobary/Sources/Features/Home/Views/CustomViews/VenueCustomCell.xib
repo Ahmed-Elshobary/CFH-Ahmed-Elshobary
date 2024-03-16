@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="115" id="4C7-QX-dNl" customClass="VenueCustomCell" customModule="CFH_Task_Ahmed_Elshobary" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="115"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4C7-QX-dNl" id="o1P-Cm-Npe">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="115"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qIs-zq-x32">
+                        <rect key="frame" x="0.0" y="0.0" width="157.33333333333334" height="115"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0K-av-leH">
+                        <rect key="frame" x="163.33333333333337" y="9.9999999999999982" width="223.66666666666663" height="20.333333333333329"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.1647058824" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="mediumFont">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EbJ-9h-wji">
+                        <rect key="frame" x="163.33333333333337" y="47.333333333333336" width="223.66666666666663" height="20.333333333333336"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.1647058824" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="mediumFont">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVJ-Mk-t7u">
+                        <rect key="frame" x="163.33333333333337" y="84.666666666666671" width="223.66666666666663" height="20.333333333333329"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.50980392159999999" green="0.0" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="mediumFont">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="I0K-av-leH" secondAttribute="trailing" constant="6" id="01x-fZ-ulr"/>
+                    <constraint firstAttribute="bottom" secondItem="qIs-zq-x32" secondAttribute="bottom" id="8V1-Ew-qLd"/>
+                    <constraint firstItem="EbJ-9h-wji" firstAttribute="leading" secondItem="qIs-zq-x32" secondAttribute="trailing" constant="6" id="8le-Oc-Fm3"/>
+                    <constraint firstItem="I0K-av-leH" firstAttribute="top" secondItem="qIs-zq-x32" secondAttribute="top" constant="10" id="GtJ-ck-UQZ"/>
+                    <constraint firstAttribute="trailing" secondItem="EbJ-9h-wji" secondAttribute="trailing" constant="6" id="OCw-ew-hZe"/>
+                    <constraint firstItem="EbJ-9h-wji" firstAttribute="top" secondItem="I0K-av-leH" secondAttribute="bottom" constant="17" id="Vj5-Vb-uFc"/>
+                    <constraint firstItem="BVJ-Mk-t7u" firstAttribute="top" secondItem="EbJ-9h-wji" secondAttribute="bottom" constant="17" id="Z6b-0k-pt1"/>
+                    <constraint firstItem="BVJ-Mk-t7u" firstAttribute="leading" secondItem="I0K-av-leH" secondAttribute="leading" id="d23-ni-lZD"/>
+                    <constraint firstItem="qIs-zq-x32" firstAttribute="top" secondItem="o1P-Cm-Npe" secondAttribute="top" id="dsJ-qc-57K"/>
+                    <constraint firstAttribute="bottom" secondItem="BVJ-Mk-t7u" secondAttribute="bottom" constant="10" id="eWW-ak-iEs"/>
+                    <constraint firstItem="qIs-zq-x32" firstAttribute="leading" secondItem="o1P-Cm-Npe" secondAttribute="leading" id="kLi-jO-GCM"/>
+                    <constraint firstItem="I0K-av-leH" firstAttribute="leading" secondItem="qIs-zq-x32" secondAttribute="trailing" constant="6" id="o0J-54-YEk"/>
+                    <constraint firstItem="BVJ-Mk-t7u" firstAttribute="trailing" secondItem="I0K-av-leH" secondAttribute="trailing" id="uSs-ZD-REN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="qIs-zq-x32" firstAttribute="width" secondItem="4C7-QX-dNl" secondAttribute="width" multiplier="0.4" id="YRE-cj-rFm"/>
+            </constraints>
+            <connections>
+                <outlet property="venueAddress" destination="EbJ-9h-wji" id="cbL-NJ-dKF"/>
+                <outlet property="venueCategory" destination="BVJ-Mk-t7u" id="14e-UJ-Ddr"/>
+                <outlet property="venueImage" destination="qIs-zq-x32" id="uPJ-Eu-4oo"/>
+                <outlet property="venueName" destination="I0K-av-leH" id="qUQ-dU-Pvk"/>
+            </connections>
+            <point key="canvasLocation" x="-40.458015267175568" y="86.971830985915503"/>
+        </tableViewCell>
+    </objects>
+</document>
